@@ -1,0 +1,54 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/anders/Repo/RAC/ReactiveCocoa/Deprecations+Removals.swift",
+      "line": 11,
+      "symbol": "NSObject.values(forKeyPath:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anders/Repo/RAC/ReactiveCocoa/UIKit/ReusableComponents.swift",
+      "line": 5,
+      "symbol": "Reusable",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anders/Repo/RAC/ReactiveCocoa/UIKit/ReusableComponents.swift",
+      "line": 6,
+      "symbol": "Reusable.prepareForReuse()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anders/Repo/RAC/ReactiveCocoa/UIKit/ReusableComponents.swift",
+      "line": 10,
+      "symbol": "NSObject.prepareForReuse",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anders/Repo/RAC/ReactiveCocoa/UIKit/UIButton.swift",
+      "line": 36,
+      "symbol": "UIButton.image",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anders/Repo/RAC/ReactiveCocoa/UIKit/UICollectionView.swift",
+      "line": 5,
+      "symbol": "UICollectionView.reloadData",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/anders/Repo/RAC/ReactiveCocoa/UIKit/UITableView.swift",
+      "line": 5,
+      "symbol": "UITableView.reloadData",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/anders/Repo/RAC"
+}

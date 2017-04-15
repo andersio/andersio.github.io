@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Reactive&lt;NSObject&gt; Struct Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/Reactive&lt;NSObject&gt;" class="dashAnchor"></a>
+    <a title="Reactive&lt;NSObject&gt; Struct Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">ReactiveCocoa Docs</a> (89% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">ReactiveCocoa Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Reactive&lt;NSObject&gt; Struct Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/CocoaAction.html">CocoaAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DynamicProperty.html">DynamicProperty</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Reactive&lt;MKMapView&gt;.html">Reactive&lt;MKMapView&gt;</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Reactive&lt;NSButton&gt;.html">Reactive&lt;NSButton&gt;</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Reactive&lt;NSCollectionView&gt;.html">Reactive&lt;NSCollectionView&gt;</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Reactive&lt;NSControl&gt;.html">Reactive&lt;NSControl&gt;</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Reactive&lt;NSImageView&gt;.html">Reactive&lt;NSImageView&gt;</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Reactive&lt;NSLayoutConstraint&gt;.html">Reactive&lt;NSLayoutConstraint&gt;</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Reactive&lt;NSObject&gt;.html">Reactive&lt;NSObject&gt;</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Reactive&lt;NSPopUpButton&gt;.html">Reactive&lt;NSPopUpButton&gt;</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Reactive&lt;NSSegmentedControl&gt;.html">Reactive&lt;NSSegmentedControl&gt;</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Reactive&lt;NSSlider&gt;.html">Reactive&lt;NSSlider&gt;</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Reactive&lt;NSTableView&gt;.html">Reactive&lt;NSTableView&gt;</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Reactive&lt;NSTextField&gt;.html">Reactive&lt;NSTextField&gt;</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Reactive&lt;NSObject&gt;</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">struct</span> <span class="kt">Reactive</span><span class="o">&lt;</span><span class="kt">Base</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Fe13ReactiveCocoaRxCSo8NSObjectrV13ReactiveSwift8Reactive8producerFT10forKeyPathSS_GVS1_14SignalProducerGSqP__O6Result7NoError_"></a>
+                    <a name="//apple_ref/swift/Method/producer(forKeyPath:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Fe13ReactiveCocoaRxCSo8NSObjectrV13ReactiveSwift8Reactive8producerFT10forKeyPathSS_GVS1_14SignalProducerGSqP__O6Result7NoError_">producer(forKeyPath:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a producer which sends the current value and all the subsequent
+changes of the property specified by the key path.</p>
+
+<p>The producer completes when the object deinitializes.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">producer</span><span class="p">(</span><span class="n">forKeyPath</span> <span class="nv">keyPath</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">SignalProducer</span><span class="o">&lt;</span><span class="kt">Any</span><span class="p">?,</span> <span class="kt">NoError</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPath</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The key path of the property to be observed.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A producer emitting values of the property specified by the key path.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Fe13ReactiveCocoaRxCSo8NSObjectrV13ReactiveSwift8Reactive6signalFT10forKeyPathSS_GCS1_6SignalGSqP__O6Result7NoError_"></a>
+                    <a name="//apple_ref/swift/Method/signal(forKeyPath:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Fe13ReactiveCocoaRxCSo8NSObjectrV13ReactiveSwift8Reactive6signalFT10forKeyPathSS_GCS1_6SignalGSqP__O6Result7NoError_">signal(forKeyPath:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a signal all changes of the property specified by the key path.</p>
+
+<p>The signal completes when the object deinitializes.</p>
+
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Does not send the initial value. See <code><a href="../Structs/Reactive<NSObject>.html#/s:Fe13ReactiveCocoaRxCSo8NSObjectrV13ReactiveSwift8Reactive8producerFT10forKeyPathSS_GVS1_14SignalProducerGSqP__O6Result7NoError_">producer(forKeyPath:)</a></code>.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">signal</span><span class="p">(</span><span class="n">forKeyPath</span> <span class="nv">keyPath</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Signal</span><span class="o">&lt;</span><span class="kt">Any</span><span class="p">?,</span> <span class="kt">NoError</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPath</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The key path of the property to be observed.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A producer emitting values of the property specified by the key path.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ve13ReactiveCocoaRxCSo6NSViewrV13ReactiveSwift8Reactive15prepareForReuseGCS1_6SignalT_O6Result7NoError_"></a>
+                    <a name="//apple_ref/swift/Property/prepareForReuse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ve13ReactiveCocoaRxCSo6NSViewrV13ReactiveSwift8Reactive15prepareForReuseGCS1_6SignalT_O6Result7NoError_">prepareForReuse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">struct</span> <span class="kt">Reactive</span><span class="o">&lt;</span><span class="kt">Base</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ve13ReactiveCocoaRxCSo8NSObjectxSo23NSCollectionViewElementrV13ReactiveSwift8Reactive15prepareForReuseGCS2_6SignalT_O6Result7NoError_"></a>
+                    <a name="//apple_ref/swift/Property/prepareForReuse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ve13ReactiveCocoaRxCSo8NSObjectxSo23NSCollectionViewElementrV13ReactiveSwift8Reactive15prepareForReuseGCS2_6SignalT_O6Result7NoError_">prepareForReuse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">struct</span> <span class="kt">Reactive</span><span class="o">&lt;</span><span class="kt">Base</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Fe13ReactiveCocoaRxCSo8NSObjectrV13ReactiveSwift8Reactive6valuesFT10forKeyPathSS_GVS1_14SignalProducerGSqP__O6Result7NoError_"></a>
+                    <a name="//apple_ref/swift/Method/values(forKeyPath:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Fe13ReactiveCocoaRxCSo8NSObjectrV13ReactiveSwift8Reactive6valuesFT10forKeyPathSS_GVS1_14SignalProducerGSqP__O6Result7NoError_">values(forKeyPath:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">struct</span> <span class="kt">Reactive</span><span class="o">&lt;</span><span class="kt">Base</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Fe13ReactiveCocoaRxCSo8NSObjectrV13ReactiveSwift8Reactive17makeBindingTargeturFT2onPS1_9Scheduler_FTxqd___T__GVS1_13BindingTargetqd___"></a>
+                    <a name="//apple_ref/swift/Method/makeBindingTarget(on:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Fe13ReactiveCocoaRxCSo8NSObjectrV13ReactiveSwift8Reactive17makeBindingTargeturFT2onPS1_9Scheduler_FTxqd___T__GVS1_13BindingTargetqd___">makeBindingTarget(on:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a binding target which uses the lifetime of the object, and 
+weakly references the object so that the supplied <code>action</code> is triggered 
+only if the object has not deinitialized.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">makeBindingTarget</span><span class="o">&lt;</span><span class="kt">U</span><span class="o">&gt;</span><span class="p">(</span><span class="n">on</span> <span class="nv">scheduler</span><span class="p">:</span> <span class="kt">Scheduler</span> <span class="o">=</span> <span class="kt">UIScheduler</span><span class="p">(),</span> <span class="n">_</span> <span class="nv">action</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Base</span><span class="p">,</span> <span class="kt">U</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">BindingTarget</span><span class="o">&lt;</span><span class="kt">U</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>scheduler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An optional scheduler that the binding target uses. If it is not specified, a UI scheduler would be used.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>action</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The action to consume values from the bindings.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A binding target that holds no strong references to the object.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Fe13ReactiveCocoaRxCSo8NSObjectrV13ReactiveSwift8Reactive7triggerFT3forV10ObjectiveC8Selector_GCS1_6SignalT_O6Result7NoError_"></a>
+                    <a name="//apple_ref/swift/Method/trigger(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Fe13ReactiveCocoaRxCSo8NSObjectrV13ReactiveSwift8Reactive7triggerFT3forV10ObjectiveC8Selector_GCS1_6SignalT_O6Result7NoError_">trigger(for:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a signal which sends a <code>next</code> event at the end of every 
+invocation of <code>selector</code> on the object.</p>
+
+<p>It completes when the object deinitializes.</p>
+
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Observers to the resulting signal should not call the method
+    specified by the selector.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">trigger</span><span class="p">(</span><span class="k">for</span> <span class="nv">selector</span><span class="p">:</span> <span class="kt">Selector</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Signal</span><span class="o">&lt;</span><span class="p">(),</span> <span class="kt">NoError</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>selector</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The selector to observe.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A trigger signal.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Fe13ReactiveCocoaRxCSo8NSObjectrV13ReactiveSwift8Reactive6signalFT3forV10ObjectiveC8Selector_GCS1_6SignalGSaGSqP___O6Result7NoError_"></a>
+                    <a name="//apple_ref/swift/Method/signal(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Fe13ReactiveCocoaRxCSo8NSObjectrV13ReactiveSwift8Reactive6signalFT3forV10ObjectiveC8Selector_GCS1_6SignalGSaGSqP___O6Result7NoError_">signal(for:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a signal which sends a <code>next</code> event, containing an array of 
+bridged arguments, at the end of every invocation of <code>selector</code> on the 
+object.</p>
+
+<p>It completes when the object deinitializes.</p>
+
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Observers to the resulting signal should not call the method
+    specified by the selector.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">signal</span><span class="p">(</span><span class="k">for</span> <span class="nv">selector</span><span class="p">:</span> <span class="kt">Selector</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Signal</span><span class="o">&lt;</span><span class="p">[</span><span class="kt">Any</span><span class="p">?],</span> <span class="kt">NoError</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>selector</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The selector to observe.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A signal that sends an array of bridged arguments.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ve13ReactiveCocoaRxCSo8NSObjectrV13ReactiveSwift8Reactive8lifetimeCS1_8Lifetime"></a>
+                    <a name="//apple_ref/swift/Property/lifetime" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ve13ReactiveCocoaRxCSo8NSObjectrV13ReactiveSwift8Reactive8lifetimeCS1_8Lifetime">lifetime</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a lifetime that ends when the object is deallocated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@nonobjc</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">lifetime</span><span class="p">:</span> <span class="kt">Lifetime</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="https://github.com/ReactiveCocoa/ReactiveCocoa" target="_blank" rel="external">ReactiveCocoa</a>. All rights reserved. (Last updated: 2017-04-16)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.5-reactivecocoa</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
